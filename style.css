@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:15vh;
+    border-bottom:2px solid white ;
+    position: fixed;
+    top: 0;
+    background-color: rgb(46, 45, 45);
+}
+#navbar .part1{
+    flex: 1;
+}
+#navbar .nav2{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.hero-section{
+    display: flex;
+    padding: 7rem;
+}
+.hero-section .one,.two{
+    flex: 50%;
+
+}
+.hero-section .one h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+.hero-section .two img{
+    height: 70%;
+    width: 70%;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid orange;
+   box-shadow: 10px 10px 20px rgba(194, 143, 66, 0.5);
+}
+.hero-section .two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.hero-section h3{
+    font-size: 2rem;
+}
+.hero-section .one span{
+    background: linear-gradient(45deg, #936458, #feb47b); /* Gradient colors */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.hero-section .one div{
+    background-color: #feb47b;
+    display: inline;
+    padding: 1rem;
+    border-radius:10px;
+}
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-section #one{
+    display: flex;
+
+}
+.about-section .one1{
+    flex: 50%;
+}
+.about-section .one2{
+    flex: 50%;
+}
+.about-section .one1 img{
+    height: 70%;
+    width: 60%;
+    background-size: cover;
+    margin: 3rem;
+    border: 10px solid orange;
+}
+.one2 .details{
+    display: flex;
+   flex-wrap: wrap;
+   margin: 2rem;
+   
+
+}
+.one2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.one2 .details div{
+    height: 3rem;
+    min-width: 250px;
+}
+#resume{
+    display: inline;
+    background-color: orange;
+    padding: 1.5rem;
+    border-radius: 20px;
+    
+}
+
+.cardlist{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardlist .card{
+    display: flex;
+    width: 40%;
+    margin: 2rem;
+    align-items: center;    
+    flex-direction: column;
+    border: 2px solid orange;
+    padding: 1rem;
+}
+
+.card .pnr img{
+    background-size: cover;
+}
+@media (max-width:600px){
+    .cardlist .card{
+        width: 80%;
+}
+}
